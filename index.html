@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up | Manahil Restaurant</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .signup-container {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-radius: 20px;
+      padding: 40px;
+      width: 380px;
+      text-align: center;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .signup-container h1 {
+      font-family: 'Pacifico', cursive;
+      color: #000;
+      margin-bottom: 20px;
+      font-size: 2em;
+    }
+
+    .signup-container p {
+      color: #333;
+      margin-bottom: 30px;
+      font-size: 1.1em;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 90%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 10px;
+      outline: none;
+      font-size: 16px;
+      background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    input::placeholder {
+      color: #555;
+    }
+
+    button {
+      width: 95%;
+      padding: 12px;
+      border: none;
+      background-color: #ff6f61;
+      color: white;
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 15px;
+      font-family: 'Pacifico', cursive;
+      transition: background 0.3s ease, transform 0.2s;
+    }
+
+    button:hover {
+      background-color: #ff9671;
+      transform: scale(1.05);
+    }
+
+    a {
+      display: block;
+      margin-top: 20px;
+      color: #000;
+      text-decoration: none;
+      font-weight: 600;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    a:hover {
+      color: #ff6f61;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 15px;
+      text-align: center;
+      width: 100%;
+      color: #fff;
+      font-family: 'Pacifico', cursive;
+    }
+  </style>
+</head>
+<body>
+  <div class="signup-container">
+    <h1>🍕 Manahil Restaurant</h1>
+    <p>Create Your Account</p>
+
+    <form>
+      <input type="text" placeholder="Full Name" required><br>
+      <input type="email" placeholder="Email Address" required><br>
+      <input type="password" placeholder="Password" required><br>
+      <input type="password" placeholder="Confirm Password" required><br>
+      <button type="submit">Sign Up</button>
+    </form>
+
+    <a href="login.html">Already have an account? Login</a>
+  </div>
+
+  <footer>© 2025 Manahil Restaurant | All Rights Reserved</footer>
+</body>
+</html>
